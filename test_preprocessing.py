@@ -44,4 +44,5 @@ def test_model_performance():
     model = train_model(X, y)
     preds = model.predict(X)
     accuracy = accuracy_score(y, preds)
+    print("Accuracy",accuracy)
     assert accuracy >= 0.79, f"Accuracy is too low: {accuracy}"
